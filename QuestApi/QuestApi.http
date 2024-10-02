@@ -1,0 +1,30 @@
+﻿@QuestApi_HostAddress = https://localhost:7226
+
+POST {{QuestApi_HostAddress}}/questitems
+Content-Type: application/json
+
+{
+    "name": "Tuhoa rotat",
+    "description": "Tapa 3 rottaa ja tuo nahat minulle",
+    "reward":50  
+}
+###
+
+
+POST {{QuestApi_HostAddress}}/questitems
+Content-Type: application/json
+
+{
+    "name": "Etsi Viljo",
+    "description": "Onks Viljoo näkyny?",
+    "reward":100  
+}
+###
+
+GET {{QuestApi_HostAddress}}/questitems
+
+###
+
+GET {{QuestApi_HostAddress}}/questitems/1
+
+###
